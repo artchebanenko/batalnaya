@@ -1,7 +1,6 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/ssr-apis/
- */
+import React from 'react'
+import { YMaps } from 'react-yandex-maps'
 
-// You can delete this file if you're not using it
+export function wrapRootElement({ element }) {
+  return <YMaps>{element}</YMaps>
+}
